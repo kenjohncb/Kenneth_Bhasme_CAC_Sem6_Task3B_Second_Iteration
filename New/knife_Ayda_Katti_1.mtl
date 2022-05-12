@@ -1,0 +1,16 @@
+# Blender MTL File: 'Ayda_Katti_00001.blend'
+# Material Count: 1
+
+newmtl map_AydaKatti_01
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.018460 0.021122
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump Ayda_Katti_low_map_AydaKatti_01_Normal_OpenGL.png
+map_Kd Ayda_Katti_low_map_AydaKatti_01_BaseColor.png
+map_Ns Ayda_Katti_low_map_AydaKatti_01_Roughness.png
+refl Ayda_Katti_low_map_AydaKatti_01_Metallic.png

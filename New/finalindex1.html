@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            3D Virtual Museum website - Kodava Traditions and Practises
+        </title>
+        <!-- Loading AFRAME -->
+        <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+        <!-- Adding an environment -->
+        <script src="https://unpkg.com/aframe-environment-component@1.3.1/dist/aframe-environment-component.min.js"></script>
+    </head>
+    <body>
+        
+        <!-- AFRAME scene -->
+        <a-scene>
+
+            <!-- Loading assets -->
+            <a-assets>
+                <a-asset-items id="forest" src="assets/scene.gltf" ></a-asset-items>
+                <img id="sky" src="sky1.jpeg">
+                <img id="ground" src="ground.jpeg">
+                <img id="dress" src="Kodava dress.jpeg">
+                <img id="fight" src="Pariyakali - Two men Fighting.jpeg">
+                <img id="wedding" src="wedding.jpeg">
+                <img id="basket" src="wicker basket exchanged at weddings.jpeg">
+                <img id="sky1" src="Kodagu sky.jpeg">
+                <img id="deity" src="Honour of deity.jpeg">
+                <img id="rice" src="Rice cultivation.jpeg">
+                <img id="audio" src="music.webp">
+                <img id="left" src="left.png">
+                <img id="right" src="right.png">
+                <img id="center" src="3d.png">
+                <img id="left1" src="left1.png">
+                <img id="right1" src="right1.png">
+                <img id="exit" src="exit.png">
+                <img id="sign" src="Asset 2.png">
+                <img id="icon" src="iicon.png">
+                <img id="instructions" src="sign1.png">
+                <img id="instrument" src="Kodava men playing instruments.webp">
+                <img id="qr" src="qrcode_www.instagram.com.png">
+                <img id="note1" src="note.png">
+                <img id="note2" src="Asset 1.png">
+                <video id="water" autoplay ="true" src="pexels-arvin-latifi-6466763.mp4"></video>
+                <video id="forest1" autoplay ="true" src="pexels-mikhail-nilov-6981411.mp4"></video>
+                <video id="ceremony" autoplay ="true" src="video1.mp4"></video>
+                <video id="wedding" autoplay ="true" src="videoplayback (1).mp4"></video>
+                <audio id="crowd" src="Crowd.mp3"></audio>
+                <audio id="crowd1" src="Sword Slah.mp3"></audio>
+                <audio id="crowd2" src="Drum beat.mp3"></audio>
+            </a-assets>
+
+            <!-- Adding 3D models to the scene -->
+            <!-- <a-entity gltf-model="pine.glb"></a-entity> -->
+            <a-entity environment="preset: forest;  dressingColor:#77BB41; groundColor:#263E0F; groundColor2:#38571A; bottomColor:#00C7FC; "></a-entity>
+            <a-entity gltf-model="room.glb" position="-15 0.09 10" rotation="0 180 0" scale="0.4 0.4 0.4" ></a-entity>
+            <a-entity gltf-model="room.glb" position="12 0.09 7" rotation="0 0 0" scale="0.4 0.4 0.4"></a-entity>
+            <a-entity gltf-model="room.glb" position="-2.822 0.09 -5.7" rotation="0 90 0" scale="0.4 0.4 0.360"></a-entity>
+            <a-entity gltf-model="Projeto.glb" scale="2 2.7 2" position="-7 0 27" rotation="0 10 0"></a-entity>
+            <a-entity gltf-model="wonder.glb" position="16 0.1 13" rotation="0 -90 0" scale="1.5 1.5 1.5"></a-entity> -->
+            <!-- <a-entity gltf-model="wonder.glb" position="0 0 23"></a-entity> -->
+            <a-entity gltf-model="Projeto.glb" scale="2 2.7 2" position="-7 0 27" rotation="0 10 0"></a-entity>
+            <a-entity gltf-model="alter.glb" scale="0.1 0.1 0.1" position="-8.461 0.25 18.961" rotation="0 20 0"></a-entity>
+            <a-entity gltf-model="board.glb" position="-1 0.5 -3" rotation="0 45 0"  scale="1 1 1"></a-entity>
+            <a-entity gltf-model="turban.glb" position="-5.023 2.921 -9.154" scale="4 4 4" animation="property:rotation; to: 0 360 0; loop:true; dur:5000"></a-entity>
+            <a-entity gltf-model="sowrd1.glb" position="1.419 4.130  -2.544" rotation="-20 45 0" scale="4 4 5"></a-entity>
+            <a-entity gltf-model="gun.glb" position="2.045 4.364 -2.419" rotation="-90 45 0" scale="0.5 0.5 0.35" animation="property:rotation; to: -90 405 0; loop:true; dur:5000"></a-entity>
+            <a-entity gltf-model="pichan.glb" position="3.091 3.465 -1.353" rotation="30 45 0" scale="0.2 0.2 0.3"></a-entity>
+            <!-- <a-entity gltf-model="box.glb" position="-5.6 3 4" rotation="0 73.7 0" scale="2.5 2.5 2.5"></a-entity> -->
+            <a-entity gltf-model="stand.glb" position="-4.586 0.900 -8.411" rotation="0 28 0" scale="2.5 2.5 2.5"></a-entity>
+            <a-entity gltf-model="stand.glb" position="1.616 0.9 -8.411" rotation="0 -28 0" scale="2.5 2.5 2.5"></a-entity>
+            <a-entity gltf-model="stand.glb" position="-4.586 0.900 -1.955" rotation="0 28 0" scale="2.5 2.5 2.5"></a-entity>
+            <a-entity gltf-model="stand.glb" position="1.616 0.900 -1.955" rotation="0 -28 0" scale="2.5 2.5 2.5"></a-entity>
+
+            <a-entity gltf-model="drums1.glb" position="-4.856 2.946 -2.518" scale="10 10 10" rotation="0 0 0" animation="property:rotation; to: 0 360 0; loop:true; dur:5000" ;
+            animation_2="property:position; to: -4.856 3.5 -2.518; startEvents: mouseenter; dur:500"></a-entity>
+            <a-entity gltf-model="chain.glb" position="1.890 3.300 -8.564" rotation="13.7 0 10.860" scale="0.5 0.5 0.5" animation="property:rotation; to: 0 360 0; loop:true; dur:5000"></a-entity>
+
+            <a-image src="#note2" position="-3.5 5.7 25" width="2.5" height="0.45"></a-image>
+
+            <!-- <a-sky src="#sky"></a-sky> -->
+            <!-- Creating the path -->
+            <a-plane rotation="-90 -10 0" position="-4 0.3 25" width="3" height="30" color="#F2CA58"></a-plane>
+            <a-plane rotation="-90 90 0" position="-1.5 0.15 10" width="3" height="12" color="#F2CA58"></a-plane>
+            <a-plane rotation="-90 0 0" position="-1.5 0.15 1" width="3" height="15" color="#F2CA58"></a-plane>
+
+            <!-- Adding Walls -->
+            <!-- <a-box position="-10 5 10" scale="10 10 15" color="#77BB41"></a-box>
+            <a-box position="17 5 10" scale="0.3 10 15" color="#77BB41"></a-box> -->
+
+            <!-- Adding Images to Gallery -->
+            <a-image src="#dress" width="2.5" height="3.5" position="-10.369 3.838 15.100" rotation="0 180 0" scale="1.5 1.5 1" animation__mouseenter="property:scale;to: 1.7 1.7 1.7; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property:scale; to: 1.5 1.5 1.5; startEvents: mouseleave; dur: 500" ></a-image>
+            <a-image src="#fight" width="4.5" height="3.5" position="-16.080 3.830 15.100" rotation="0 180 0" scale="1.5 1.5 1"  animation__mouseenter="property:scale;to: 1.7 1.7 1.7; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property:scale; to: 1.5 1.5 1.5; startEvents: mouseleave; dur: 500"></a-image>
+            <a-image src="#wedding" width="4.5" height="3.5" position="-16.080 3.830 2.029" rotation="0 0 0"  scale="1.5 1.5 1"  animation__mouseenter="property:scale;to: 1.7 1.7 1.7; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property:scale; to: 1.5 1.5 1.5; startEvents: mouseleave; dur: 500"></a-image>
+            <a-image src="#basket" width="2.5" height="3.5" position="-10.369 3.830 2.029" rotation="0 0 0" scale="1.5 1.5 1"  animation__mouseenter="property:scale;to: 1.7 1.7 1.7; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property:scale; to: 1.5 1.5 1.5; startEvents: mouseleave; dur: 500"></a-image>
+            <a-image src="#sky1" width="14.6" height="2" position="-19.746 5.594 8.556" rotation="0 90 0" scale="0.820 1 1"  animation__mouseenter="property:scale;to: 0.85 1.2 1.7; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property:scale; to: 0.8 1 1; startEvents: mouseleave; dur: 500"></a-image>
+            <a-image src="#deity" width="4.7" height="3.5" position="-19.746 2.747 12.689" rotation="0 90 0" scale="0.8 0.8 1"  animation__mouseenter="property:scale;to: 1 1 1.7; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property:scale; to: 0.8 0.8 1; startEvents: mouseleave; dur: 500"></a-image>
+            <a-image src="#rice" width="4.7" height="3.5" position="-19.746 2.747 8.619" rotation="0 90 0" scale="0.8 0.8 1"  animation__mouseenter="property:scale;to: 1 1 1.7; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property:scale; to: 0.8 0.8 1; startEvents: mouseleave; dur: 500"></a-image>
+            <a-image src="#instrument" width="4.7" height="3.5" position="-19.746 2.747 4.505" rotation="0 90 0" scale="0.8 0.8 1"  animation__mouseenter="property:scale;to: 1 1 1.7; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property:scale; to: 0.8 0.8 1; startEvents: mouseleave; dur: 500"></a-image>
+            
+            <!-- Adding Videos -->
+            <a-video src="#water" width="7" height="4.5" position="10.838 3.831 1.930" rotation="0 180 0" animation__mouseenter="property:scale;to: 1.2 1.2 1; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property:scale; to: 1 1 1; startEvents: mouseleave; dur: 500"></a-video>
+            <a-video src="#forest1" width="7" height="4.5" position="10.838 3.831 15.100" rotation="0 0 0" animation__mouseenter="property:scale;to: 1.2 1.2 1; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property:scale; to: 1 1 1; startEvents: mouseleave; dur: 500"></a-video>
+            <a-video src="#ceremony" width="7" height="4.5" position="16.930 3.831 5.538" rotation="0 -90 0" scale="0.8 0.8 1" animation__mouseenter="property:scale;to: 1 1 1; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property:scale; to: 0.8 0.8 1; startEvents: mouseleave; dur: 500"></a-video>
+            <a-video src="#wedding" width="7" height="4.5" position="16.930 3.831 11.565" rotation="0 -90 0" scale="0.8 0.8 1" animation__mouseenter="property:scale;to: 1 1 1; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property:scale; to: 0.8 0.8 1; startEvents: mouseleave; dur: 500"></a-video>
+
+            <!-- Adding audios in the form of boxes -->
+            <a-box src="#audio" sound="src:#crowd; on:click" position="-8.868 0 13.193" rotation="0 45 0"  scale="1 1 1" animation__mouseenter="property:position;to: -8.868 1 13.193; startEvents: mouseenter; dur: 500" ; 
+            animation__mouseleave="property:position; to: -8.868 0 13.193; startEvents: mouseleave; dur: 500"></a-box>
+            <a-box src="#audio" sound="src:#crowd1; on:click" position="-5.792 0 0.883" scale="1 1 1" rotation="0 45 0" animation__mouseenter="property:position;to: -5.792 1 0.883; startEvents: mouseenter; dur: 500" ; 
+            animation__mouseleave="property:position; to: -5.792 0 0.883; startEvents: mouseleave; dur: 500"></a-box>
+            <a-box src="#audio" sound="src:#crowd2; on:click" position="5.718 0 13.183" rotation="0 45 0"  scale="1 1 1" animation__mouseenter="property:position;to: 5.718 1 13.183; startEvents: mouseenter; dur: 500" ; 
+            animation__mouseleave="property:position; to: 5.718 0 13.183; startEvents: mouseleave; dur: 500"></a-box>
+            
+            <!-- Adding direction signs -->
+            <a-image src="#left" position="-4.682 5.888 12.093" width="3" height="2"></a-image>
+            <a-image src="#left1" position="-4.682 5.888 12" rotation="0 180 0" width="3" height="2"></a-image>
+            <a-image src="#right" position="1.682 5.888 12.093" width="3" height="2"></a-image>
+            <a-image src="#right1" position="1.682 5.888 12" rotation="0 180 0" width="3" height="2"></a-image>
+            <a-image src="#center" position="-1.5 5.888 12.093" width="3" height="2"></a-image>
+            <a-image src="#exit" position="-1.5 5.888 12" rotation="0 180 0"width="3" height="2"></a-image>
+
+            <!-- Entering instructions -->
+            <a-image src="#sign" position="-6.85 2.726 25.165" rotation="0 10 0"   width="1" height="0.9" scale="1.7 0.8 1"></a-image>
+            <a-image src="#instructions" position="0.1 2 25.165" rotation="0 -10 0"   width="3" height="2.5"></a-image>
+            <a-image src="#instructions" position="0.11 2 25.155" rotation="0 170 0"   width="3" height="2.5"></a-image>
+
+            <!-- QR code for each 3D model (code invalid as of now) -->
+            <a-image src="#qr" position="-4.264 0.622 -7.781" rotation="-15.000 28 0" scale="0.9 0.9 0.9"></a-image>
+            <a-image src="#qr" position="1.267 0.622 -7.781" rotation="-15.000 -28 0" scale="0.9 0.9 0.9"></a-image>
+            <a-image src="#qr" position="-4.264 0.622 -1.332" rotation="-15.000 28 0" scale="0.9 0.9 0.9"></a-image>
+            <a-image src="#qr" position="1.267 0.622 -1.332" rotation="-15.000 -28 0" scale="0.9 0.9 0.9"></a-image>
+
+            <a-image src="#note1" position="-4.440 1.918 -1.872" rotation="-15.000 28 0" scale="0.3 0.3 0.3" animation__mouseenter="property:scale;to: 1.4 2 1; startEvents: click; dur: 500" ;
+            animation__mouseenter1="property:position;to: -4.240 1.918 -1.672; startEvents: click; dur: 500"></a-image>
+
+            <!-- Icons for more information -->
+            <a-image src="#icon" position="-4.440 1.918 -8.119" rotation="-15.000 28 0" scale="0.3 0.3 0.3" color="white"></a-image>
+            <a-image src="#icon" position="1.531 1.918 -8.119" rotation="-15.000 -28 0" scale="0.3 0.3 0.3" color="white"></a-image>
+            <a-image src="#icon" position="-4.440 1.918 -1.872" rotation="-15.000 28 0" scale="0.3 0.3 0.3" color="white"></a-image>
+            <a-image src="#icon" position="1.531 1.918 -1.872" rotation="-15.000 -28 0" scale="0.3 0.3 0.3" color="white"></a-image>
+            <a-image src="#icon" position="-8 2 -7" rotation="0 30 0" scale="0.3 0.3 0.3" color="white"></a-image>
+            
+              <!-- Adding Sun light to the environment -->
+              <!-- <a-light type="directional" color="#FFFFFF" position="20 1000 0" intensity="3" castShadow="true"></a-light> -->
+
+            <!-- Camera position with Raycaster for interactions -->
+            <a-camera position="-4 3 29">
+                <a-cursor scale="0.5 0.5 0.5" color="red" />
+              </a-camera>
+
+              
+        </a-scene>
+    </body>
+</html>
